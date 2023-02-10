@@ -1,9 +1,12 @@
-﻿Console.WriteLine("Введите число 1: ");
-int i = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число 2: ");
-int j = Convert.ToInt32(Console.ReadLine());
-if (i/j == j)
-{
-    Console.WriteLine("Да");
-}
-else Console.WriteLine("Нет");
+﻿// Напишите программу, которая на вход принимает число и выдает его квадрат (число умноженное 
+// на само себя).
+
+// Например:
+// 4 -> 16 
+// -3 -> 9 
+// -7 -> 49
+
+Console.Write ("Введите число: ");
+int numbers = int.Parse(Console.ReadLine()!);
+int sqr = numbers*numbers;
+Console.WriteLine("sqr=" + sqr);
