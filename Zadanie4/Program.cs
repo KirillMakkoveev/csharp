@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("number1= ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("number2= ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("number3= ");
+int c = Convert.ToInt32(Console.ReadLine());
+int max = a;
+if (max > b) max = a; else max =b;
+if (max > c) max = max; else max = c; 
+if (max > b) max = max; else max = b;
+System.Console.WriteLine(max);
