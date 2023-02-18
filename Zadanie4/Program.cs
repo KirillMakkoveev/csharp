@@ -5,6 +5,6 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("number3= ");
 int c = Convert.ToInt32(Console.ReadLine());
 int max = a;
-if (max > b) max = a; else max =b;
-if (max > c) max = max; else max = c; 
+if (max < b) max = b; 
+if (max < c) max = c; 
 System.Console.WriteLine(max);
