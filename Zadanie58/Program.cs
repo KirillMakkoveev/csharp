@@ -5,7 +5,7 @@ int[,] secondArray = new int[rows, columns];
 int[,] resultArray = new int[rows, columns];
 
 FillArrayRandom(array);
-Printarray2D(array);
+PrintArray2D(array);
 
 Console.WriteLine();
 
@@ -47,5 +47,17 @@ void FillArrayRandom(int[,] array)
         {
             array[i, j] = new Random().Next(1, 10);
         }
+    }
+}
+
+void PrintArray2D(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.WriteLine();
     }
 }
